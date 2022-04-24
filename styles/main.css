@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form .input-group input, form .input-group textarea {
+  font-size: 16px;
+  padding: 10px;
+}
+
+form .group-wrapper {
+  background: #e9e9e9;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form .group-wrapper .service, form .group-wrapper .service-area {
+  background: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid .5px grey;
+}
+
+form .group-wrapper .service span, form .group-wrapper .service-area span {
+  color: red;
+}
+
+form .group-wrapper .service span:hover, form .group-wrapper .service-area span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#loading-text {
+  display: none;
+}
+
+.results-view {
+  display: none;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.results-view .result-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.results-view .result-group a {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.results-view .result-group textarea {
+  margin-bottom: 10px;
+}
+
+.results-view .result-group span {
+  color: darkcyan;
+}
+
+.results-view .result-group span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Advanced Schema Generator</title>
+</head>
+<body>
+    <form id="inputForm" action="#">
+        <div class="input-group">
+            <label>schemaType</label>
+            <input type="text" required name="schemaType">
+        </div>
+        <div class="input-group">
+            <label>businessName</label>
+            <input type="text" required name="businessName">
+        </div>
+        <div class="input-group">
+            <label>websiteURL</label>
+            <input type="text" required name="websiteURL">
+        </div>
+        <div class="input-group">
+            <label>imageURL</label>
+            <input type="text" required name="imageURL">
+        </div>
+        <div class="input-group">
+            <label>slogan</label>
+            <input type="text" required name="slogan">
+        </div>
+        <div class="input-group">
+            <label>description</label>
+            <textarea name="description" cols="30" rows="10"></textarea>
+        </div>
+        <div class="input-group">
+            <label>disambiguatingDescription</label>
+            <textarea name="disambiguatingDescription" cols="30" rows="10"></textarea>
+        </div>
+        <div class="input-group">
+            <label>streetAddress</label>
+            <input type="text" required name="streetAddress">
+        </div>
+        <div class="input-group">
+            <label>cityTown</label>
+            <input type="text" required name="cityTown">
+        </div>
+        <div class="input-group">
+            <label>state</label>
+            <input type="text" required name="state">
+        </div>
+        <div class="input-group">
+            <label>zipCode</label>
+            <input type="text" required name="zipCode">
+        </div>
+        <div class="input-group">
+            <label>country</label>
+            <input type="text" required name="country">
+        </div>
+        <div class="input-group">
+            <label>phone</label>
+            <input type="text" required name="phone">
+        </div>
+        <div class="input-group">
+            <label>email</label>
+            <input type="text" required name="email">
+        </div>
+        <div class="input-group">
+            <label>query</label>
+            <input type="text" required name="query">
+        </div>
+        <div class="input-group">
+            <label>keywords</label>
+            <input type="text" name="keywords" required>
+            <small>Separate each keyword with comma (,)</small>
+        </div>
+        <div class="input-group">
+            <label>ownersName</label>
+            <input type="text" required name="ownersName">
+        </div>
+        <div class="input-group">
+            <label>privacyPolicyURL</label>
+            <input type="text" required name="privacyPolicyURL">
+        </div>
+        <div class="input-group">
+            <label>backlinks</label>
+            <textarea name="backlinks" cols="30" rows="10"></textarea>
+        </div>
+        <label>Services</label>
+        <div class="services-wrapper group-wrapper">
+            <div id="services-list">
+                <div class="service">
+                    <div class="input-group">
+                        <label>name</label>
+                        <input type="text" required name="service-name">
+                    </div>
+                    <div class="input-group">
+                        <label>url</label>
+                        <input type="text" required name="service-url">
+                    </div>
+                    <div class="input-group">
+                        <label>description</label>
+                        <input type="text" required name="service-description">
+                    </div>
+                </div>
+            </div>
+            <button id="add_location_button" type="button">Add Location</button>
+        </div>
+        <label>Service Areas</label>
+        <div class="service-areas-wrapper group-wrapper">
+            <div id="service-areas-list">
+                <div class="service-area">
+                    <div class="input-group">
+                        <label>country</label>
+                        <input type="text" required name="service-area-country">
+                    </div>
+                    <div class="input-group">
+                        <label>state</label>
+                        <input type="text" required name="service-area-state">
+                    </div>
+                    <div class="input-group">
+                        <label>cityTown</label>
+                        <input type="text" required name="service-area-cityTown">
+                    </div>
+                    <div class="input-group">
+                        <label>url</label>
+                        <input type="text" required name="service-area-url">
+                    </div>
+                    <div class="input-group">
+                        <label>zipCodes</label>
+                        <textarea name="service-area-zipCodes" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="add_service_area">Add Service Area</button>
+        </div>
+        <div class="input-group">
+            <label>otherPages</label>
+            <textarea name="otherPages" cols="30" rows="10"></textarea>
+        </div>
+
+        <input type="submit" value="Generate Schema">
+        <input type="reset" value="Reset form">
+
+    </form>
+
+    <h3 id="loading-text">Building Schema...</h3>
+
+    <div class="results-view">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
